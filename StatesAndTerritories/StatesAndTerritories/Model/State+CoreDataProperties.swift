@@ -18,6 +18,7 @@ extension State {
     }
 
     @NSManaged public var name: String?
+    @NSManaged public var nameSection: String?
     @NSManaged public var id: Int32
     @NSManaged public var abbreviation: String?
     @NSManaged public var capital: String?

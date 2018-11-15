@@ -9,7 +9,9 @@
 import UIKit
 
 public class StateTableViewCell: UITableViewCell {
-
+    public static let reuseIdentifier = "StateCell"
+    public static let cellHeight = CGFloat(88)
+    
     // MARK: Setters
     public func set(name text: String?) {
         nameLabel.text = text

@@ -1,0 +1,6 @@
+framework module Pods_StatesAndTerritoriesTests {
+  umbrella header "Pods-StatesAndTerritoriesTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
