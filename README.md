@@ -18,6 +18,11 @@ Create an iOS iPhone application project  that can fetch JSON data from the prov
 6. Each row must show all the details of the "State" data that is sent in the above URL, using the custom UITableViewCell from the framework (Eg: Mycell.framework created in step 1)
 7. Create a NSString Category class with a function that can convert the ""area": "135767SKM"" from KMS to Miles and returns String value. The area in "Miles" must be displayed in each row.
 
+## Additional Features Beyond the Challenge
+
+1. Added ``UISearcontroller`` (search bar) to filter the data.
+2. Added table sections and indexes.
+
 ## Building and running
 
 No need to download the pods as they are already included.
