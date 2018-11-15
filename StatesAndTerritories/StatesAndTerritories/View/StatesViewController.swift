@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JRStatesCell
 import MBProgressHUD
 import PromiseKit
 
@@ -37,6 +38,11 @@ class StatesViewController: UIViewController {
         }
         tableView.keyboardDismissMode = .onDrag
         
+        // load our framework bundle
+        let bundle = Bundle(identifier: "com.jovitoroyeca.JRStatesCell")
+        tableView.register(UINib(nibName: "StateTableViewCell", bundle: bundle),
+                           forCellReuseIdentifier: StateTableViewCell.reuseIdentifier)
+        
         viewModel.fetchData()
     }
 
@@ -62,6 +68,7 @@ class StatesViewController: UIViewController {
             CoreDataAPI.sharedInstance.saveStates(json: json)
         }.done {
             MBProgressHUD.hide(for: self.view, animated: true)
+            self.viewModel.fetchData()
             self.tableView.reloadData()
         }.catch { error in
             print("\(error)")
@@ -73,6 +80,30 @@ class StatesViewController: UIViewController {
         viewModel.queryString = searchController.searchBar.text ?? ""
         viewModel.fetchData()
         tableView.reloadData()
+    }
+    
+    func setup(cell: StateTableViewCell, withState state: State) {
+        cell.set(name: state.name)
+        cell.set(abbreviation: state.abbreviation)
+        
+        var text = "Capital: "
+        if let capital = state.capital {
+            text.append(capital)
+        }
+        cell.set(capital: text)
+        
+        text = "Largest City: "
+        if let largestCity = state.largestCity {
+            text.append(largestCity)
+        }
+        cell.set(largestCity: text)
+        
+        text = "Area: "
+        if let area = state.area {
+            text.append(area.convertToMiles())
+            text.append(" sq mi.")
+        }
+        cell.set(area: text)
     }
 }
 
@@ -87,11 +118,14 @@ extension StatesViewController : UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "StateCell",
-                                                 for: indexPath)
-        let state = viewModel.object(forRowAt: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: StateTableViewCell.reuseIdentifier,
+                                                       for: indexPath) as? StateTableViewCell else {
+            fatalError("\(StateTableViewCell.reuseIdentifier) cell not found.")
+        }
         
-        cell.textLabel?.text = state.name
+        let state = viewModel.object(forRowAt: indexPath)
+        setup(cell: cell, withState: state)
+        
         return cell
     }
     
@@ -111,7 +145,7 @@ extension StatesViewController : UITableViewDataSource {
 // MARK: UITableViewDelegate
 extension StatesViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        return StateTableViewCell.cellHeight
     }
 }
 

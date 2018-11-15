@@ -33,6 +33,11 @@
 		119B4D63219CFD9300822507 /* WebServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B4D5F219CFD9300822507 /* WebServiceAPI.swift */; };
 		119B4D64219CFD9300822507 /* WebServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B4D5F219CFD9300822507 /* WebServiceAPI.swift */; };
 		119B4D65219CFD9300822507 /* WebServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B4D5F219CFD9300822507 /* WebServiceAPI.swift */; };
+		119B4D67219D099500822507 /* String+KMtoMiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B4D66219D099500822507 /* String+KMtoMiles.swift */; };
+		119B4D68219D099500822507 /* String+KMtoMiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B4D66219D099500822507 /* String+KMtoMiles.swift */; };
+		119B4D69219D099500822507 /* String+KMtoMiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B4D66219D099500822507 /* String+KMtoMiles.swift */; };
+		119B4D73219D0CD600822507 /* JRStatesCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 119B4D70219D0C7600822507 /* JRStatesCell.framework */; };
+		119B4D74219D0CD600822507 /* JRStatesCell.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 119B4D70219D0C7600822507 /* JRStatesCell.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		54D83B0854F0D58D7A7F6E1D /* Pods_StatesAndTerritoriesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0911CDCF58C2BC50D28CD40 /* Pods_StatesAndTerritoriesTests.framework */; };
 		974875B642E47455525A072A /* Pods_StatesAndTerritories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59EE457D187370CCE5D8EC23 /* Pods_StatesAndTerritories.framework */; };
 /* End PBXBuildFile section */
@@ -52,7 +57,42 @@
 			remoteGlobalIDString = 119B4D17219CE7C300822507;
 			remoteInfo = StatesAndTerritories;
 		};
+		119B4D6F219D0C7600822507 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 119B4D6A219D0C7600822507 /* JRStatesCell.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 119B4CEF219CE4E100822507;
+			remoteInfo = JRStatesCell;
+		};
+		119B4D71219D0C7600822507 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 119B4D6A219D0C7600822507 /* JRStatesCell.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 119B4CF8219CE4E100822507;
+			remoteInfo = JRStatesCellTests;
+		};
+		119B4D75219D0CD600822507 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 119B4D6A219D0C7600822507 /* JRStatesCell.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 119B4CEE219CE4E100822507;
+			remoteInfo = JRStatesCell;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		119B4D77219D0CD600822507 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				119B4D74219D0CD600822507 /* JRStatesCell.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		119B4D18219CE7C300822507 /* StatesAndTerritories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatesAndTerritories.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +114,8 @@
 		119B4D59219CFADA00822507 /* StatesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesViewModel.swift; sourceTree = "<group>"; };
 		119B4D5E219CFD9300822507 /* CoreDataAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataAPI.swift; sourceTree = "<group>"; };
 		119B4D5F219CFD9300822507 /* WebServiceAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceAPI.swift; sourceTree = "<group>"; };
+		119B4D66219D099500822507 /* String+KMtoMiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+KMtoMiles.swift"; sourceTree = "<group>"; };
+		119B4D6A219D0C7600822507 /* JRStatesCell.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JRStatesCell.xcodeproj; path = ../JRStatesCell/JRStatesCell.xcodeproj; sourceTree = "<group>"; };
 		18FA035A99B6355E6B160AA6 /* Pods-StatesAndTerritoriesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StatesAndTerritoriesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StatesAndTerritoriesTests/Pods-StatesAndTerritoriesTests.release.xcconfig"; sourceTree = "<group>"; };
 		1DA0C55910302689F3B2F318 /* Pods-StatesAndTerritoriesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StatesAndTerritoriesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StatesAndTerritoriesTests/Pods-StatesAndTerritoriesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		37EBEEA1E09EAC22FD58B7DB /* Pods-StatesAndTerritories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StatesAndTerritories.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StatesAndTerritories/Pods-StatesAndTerritories.debug.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				119B4D73219D0CD600822507 /* JRStatesCell.framework in Frameworks */,
 				974875B642E47455525A072A /* Pods_StatesAndTerritories.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,6 +159,7 @@
 		119B4D0F219CE7C300822507 = {
 			isa = PBXGroup;
 			children = (
+				119B4D6A219D0C7600822507 /* JRStatesCell.xcodeproj */,
 				119B4D1A219CE7C300822507 /* StatesAndTerritories */,
 				119B4D2F219CE7C300822507 /* StatesAndTerritoriesTests */,
 				119B4D3A219CE7C300822507 /* StatesAndTerritoriesUITests */,
@@ -141,7 +185,7 @@
 				119B4D49219CE7D700822507 /* Model */,
 				119B4D57219CFAA300822507 /* View */,
 				119B4D58219CFAAD00822507 /* ViewModel */,
-				119B4D5D219CFC4F00822507 /* API */,
+				119B4D5D219CFC4F00822507 /* Utilities */,
 				119B4D1B219CE7C300822507 /* AppDelegate.swift */,
 				119B4D1F219CE7C300822507 /* Main.storyboard */,
 				119B4D22219CE7C300822507 /* Assets.xcassets */,
@@ -195,13 +239,23 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		119B4D5D219CFC4F00822507 /* API */ = {
+		119B4D5D219CFC4F00822507 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				119B4D5E219CFD9300822507 /* CoreDataAPI.swift */,
 				119B4D5F219CFD9300822507 /* WebServiceAPI.swift */,
+				119B4D66219D099500822507 /* String+KMtoMiles.swift */,
 			);
-			path = API;
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		119B4D6B219D0C7600822507 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				119B4D70219D0C7600822507 /* JRStatesCell.framework */,
+				119B4D72219D0C7600822507 /* JRStatesCellTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		1DA1312F5D13F894882AD583 /* Pods */ = {
@@ -239,10 +293,12 @@
 				119B4D15219CE7C300822507 /* Frameworks */,
 				119B4D16219CE7C300822507 /* Resources */,
 				C81CB370C063D1B367C1DCFE /* [CP] Embed Pods Frameworks */,
+				119B4D77219D0CD600822507 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				119B4D76219D0CD600822507 /* PBXTargetDependency */,
 			);
 			name = StatesAndTerritories;
 			productName = StatesAndTerritories;
@@ -321,6 +377,12 @@
 			mainGroup = 119B4D0F219CE7C300822507;
 			productRefGroup = 119B4D19219CE7C300822507 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 119B4D6B219D0C7600822507 /* Products */;
+					ProjectRef = 119B4D6A219D0C7600822507 /* JRStatesCell.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				119B4D17219CE7C300822507 /* StatesAndTerritories */,
@@ -329,6 +391,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		119B4D70219D0C7600822507 /* JRStatesCell.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JRStatesCell.framework;
+			remoteRef = 119B4D6F219D0C7600822507 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		119B4D72219D0C7600822507 /* JRStatesCellTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = JRStatesCellTests.xctest;
+			remoteRef = 119B4D71219D0C7600822507 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		119B4D16219CE7C300822507 /* Resources */ = {
@@ -448,6 +527,7 @@
 				119B4D5A219CFADA00822507 /* StatesViewModel.swift in Sources */,
 				119B4D60219CFD9300822507 /* CoreDataAPI.swift in Sources */,
 				119B4D51219CE96B00822507 /* State+CoreDataClass.swift in Sources */,
+				119B4D67219D099500822507 /* String+KMtoMiles.swift in Sources */,
 				119B4D1C219CE7C300822507 /* AppDelegate.swift in Sources */,
 				119B4D4C219CE7E600822507 /* Model.xcdatamodeld in Sources */,
 				119B4D63219CFD9300822507 /* WebServiceAPI.swift in Sources */,
@@ -462,6 +542,7 @@
 				119B4D64219CFD9300822507 /* WebServiceAPI.swift in Sources */,
 				119B4D61219CFD9300822507 /* CoreDataAPI.swift in Sources */,
 				119B4D55219CE96B00822507 /* State+CoreDataProperties.swift in Sources */,
+				119B4D68219D099500822507 /* String+KMtoMiles.swift in Sources */,
 				119B4D5B219CFADA00822507 /* StatesViewModel.swift in Sources */,
 				119B4D52219CE96B00822507 /* State+CoreDataClass.swift in Sources */,
 				119B4D4D219CE7E600822507 /* Model.xcdatamodeld in Sources */,
@@ -476,6 +557,7 @@
 				119B4D65219CFD9300822507 /* WebServiceAPI.swift in Sources */,
 				119B4D62219CFD9300822507 /* CoreDataAPI.swift in Sources */,
 				119B4D56219CE96B00822507 /* State+CoreDataProperties.swift in Sources */,
+				119B4D69219D099500822507 /* String+KMtoMiles.swift in Sources */,
 				119B4D5C219CFADA00822507 /* StatesViewModel.swift in Sources */,
 				119B4D53219CE96B00822507 /* State+CoreDataClass.swift in Sources */,
 				119B4D4E219CE7E600822507 /* Model.xcdatamodeld in Sources */,
@@ -494,6 +576,11 @@
 			isa = PBXTargetDependency;
 			target = 119B4D17219CE7C300822507 /* StatesAndTerritories */;
 			targetProxy = 119B4D38219CE7C300822507 /* PBXContainerItemProxy */;
+		};
+		119B4D76219D0CD600822507 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JRStatesCell;
+			targetProxy = 119B4D75219D0CD600822507 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -637,6 +724,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 37EBEEA1E09EAC22FD58B7DB /* Pods-StatesAndTerritories.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = StatesAndTerritories/Info.plist;
@@ -655,6 +743,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E7D5CB1699DD4E00894AEABB /* Pods-StatesAndTerritories.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = StatesAndTerritories/Info.plist;

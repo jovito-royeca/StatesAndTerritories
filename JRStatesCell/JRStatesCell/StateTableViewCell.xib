@@ -19,15 +19,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="325" height="87.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alabama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ae-UJ-ROt">
-                        <rect key="frame" x="16" y="11" width="293" height="21"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="21" id="TTV-GK-Gya"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AL" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qn-Oo-3ia">
                         <rect key="frame" x="16" y="11" width="293" height="21"/>
                         <constraints>
@@ -35,6 +26,15 @@
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alabama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ae-UJ-ROt">
+                        <rect key="frame" x="16" y="11" width="293" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="TTV-GK-Gya"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capital: Mongomery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMm-LQ-T3G">
@@ -63,20 +63,21 @@
                     <constraint firstItem="YAa-9f-wvL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="3N9-9p-z7T"/>
                     <constraint firstItem="0qn-Oo-3ia" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="6FD-9L-YCm"/>
                     <constraint firstItem="2Ae-UJ-ROt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="6pY-Td-lie"/>
-                    <constraint firstItem="WbQ-wk-MJy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="8Sq-LG-jno"/>
-                    <constraint firstItem="WbQ-wk-MJy" firstAttribute="height" secondItem="uMm-LQ-T3G" secondAttribute="height" id="E7c-TS-hWJ"/>
+                    <constraint firstItem="WbQ-wk-MJy" firstAttribute="height" secondItem="uMm-LQ-T3G" secondAttribute="height" id="98e-eB-bFk"/>
                     <constraint firstItem="2Ae-UJ-ROt" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="IsF-yG-9JN"/>
+                    <constraint firstItem="WbQ-wk-MJy" firstAttribute="top" secondItem="YAa-9f-wvL" secondAttribute="bottom" constant="2" id="J83-V8-N3u"/>
                     <constraint firstItem="YAa-9f-wvL" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Llj-eN-50K"/>
                     <constraint firstItem="0qn-Oo-3ia" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="NmJ-x2-Fp1"/>
                     <constraint firstItem="uMm-LQ-T3G" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="VJs-CL-QwL"/>
                     <constraint firstItem="0qn-Oo-3ia" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="WTb-94-95e"/>
-                    <constraint firstItem="WbQ-wk-MJy" firstAttribute="top" secondItem="YAa-9f-wvL" secondAttribute="bottom" constant="2" id="Yzt-3s-pgv"/>
                     <constraint firstItem="YAa-9f-wvL" firstAttribute="height" secondItem="uMm-LQ-T3G" secondAttribute="height" id="apC-OA-DTh"/>
+                    <constraint firstItem="YAa-9f-wvL" firstAttribute="width" secondItem="uMm-LQ-T3G" secondAttribute="width" id="e4y-uC-abS"/>
                     <constraint firstItem="2Ae-UJ-ROt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="gYj-Gw-GI4"/>
                     <constraint firstItem="YAa-9f-wvL" firstAttribute="top" secondItem="uMm-LQ-T3G" secondAttribute="bottom" constant="2" id="gyh-Zp-ANc"/>
+                    <constraint firstItem="WbQ-wk-MJy" firstAttribute="width" secondItem="uMm-LQ-T3G" secondAttribute="width" id="inh-NT-mRI"/>
                     <constraint firstItem="uMm-LQ-T3G" firstAttribute="top" secondItem="2Ae-UJ-ROt" secondAttribute="bottom" constant="2" id="lRR-R4-cDO"/>
+                    <constraint firstItem="WbQ-wk-MJy" firstAttribute="leading" secondItem="0qn-Oo-3ia" secondAttribute="leading" id="lal-G3-nfL"/>
                     <constraint firstItem="uMm-LQ-T3G" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="qN7-Ji-a22"/>
-                    <constraint firstAttribute="trailing" secondItem="WbQ-wk-MJy" secondAttribute="trailing" constant="16" id="qWi-Wz-Wim"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
